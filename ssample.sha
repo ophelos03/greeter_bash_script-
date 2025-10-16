@@ -1,0 +1,14 @@
+# This is a files script that 
+
+
+
+#------------------------------------------------------------------------
+#!usr/bin/bash
+file="sample_data.gff" #getGFF file
+awk '$3 == "gene"' "$input" > genes.gff # This Extract lines where column 3 is "gene"
+
+
+# This Extract lines where column 3 is "exon"
+awk '$3 == "exon"' "$input" > exons.gff
+
+
